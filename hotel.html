@@ -21,51 +21,53 @@
     </header>
     <section class="container3">
       <form  action="index.html" method="post">
-      <div>
-      <span>infrastructure</span>
+      <div class="container3-left">
+      <span>Инфраструктура:</span>
         <input type="checkbox" name="pool" id="pool-field" checked>
-          <label for="pool-field"><label>
+          <label for="pool-field">Бассейн<label>
         <input type="checkbox" name="parking" id="parking-field">
-          <label for="parking-field"><label>
+          <label for="parking-field">Парковка<label>
         <input type="checkbox" name="wifi" id="wifi-field">
-          <label for="wifi-field"><label>
+          <label for="wifi-field">Wifi<label>
       </div>
-      <div>
-      <span></span>
+      <div class="container3-middle">
+      <span>Тип жилья:</span>
         <input type="checkbox" name="hotel" id="hotel-field" checked>
-          <label for="hotel-field"><label>
+          <label for="hotel-field">Гостиница<label>
         <input type="checkbox" name="motel" id="motel-field" checked>
-          <label for="motel-field"><label>
+          <label for="motel-field">Мотель<label>
         <input type="checkbox" name="apartments" id="apartments-field" checked>
-          <label for="apartments-field"><label>
+          <label for="apartments-field">Апартаменты<label>
       </div>
-      <div>
-        <label for="payments-field">СТОИМОСТЬ В СУТКИ (Р):<label>
+      <div class="container3-right">
+        <label for="payments-field">Стоимость в сутки (Р):<label>
          ОТ 0 <input type="range" name="payments" id="payments-field" min="0" max="3000" step="100" > ДО 3000
-        <button type="">ПОКАЗАТЬ</button>
+        <button type="submit">Показать</button>
       </div>
       </form>
     </section>
     <section class="navigation">
-      <div ="">
-        <label for="find"></label>
-        <input type="" name="find" id="find-field">
-      </div>
-      <div ="">
+      <form  action="index.html" method="post" oninput="hoteloutput">
+       <div ="nav-1">
+        <h2>Найдено:</h2>
+        <output  name="hoteloutput">3</output>
+       </div>
+       <div ="nav-2">
         <nav>
-          <span></span>
-        <label for="price"></label>
+          <span>Сортировка:</span>
+        <label for="price">По цене</label>
         <input type="" name="price" id="price-field">
-        <label for="type"></label>
+        <label for="type">По типу</label>
         <input type="" name="type" id="type-field">
-        <label for="rate"></label>
+        <label for="rate">По рейтингу</label>
         <input type="" name="rate" id="rate-field">
       </nav>
       </div>
       <div>
-        <button type=""><>
-        <button type="">
+        <button type=""><img src="" alt="" /></button>
+        <button type=""><img src="" alt="" /></button>
       </div>
+      </form>
     </section>
     <article >
       <div>
