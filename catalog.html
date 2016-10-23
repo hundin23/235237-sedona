@@ -3,25 +3,30 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link href="style.css" rel="stylesheet">
   </head>
   <body>
     <header>
       <nav>
-        <ul>
+        <ul class="main-nav">
+          <li><a href="#">Информация</a></li>
+          <li><a href="#">Фото и видео</a></li>
+          <li><a href="#">Карта штата</a></li>
+          <li><a href="#">Гостиницы</a></li>
         </ul>
         <div class="logo">
-          <img src="logo" width="" height="" alt="logo" />
+          <img src="logo" width="" height="" alt="logo">
         </div>
       </nav>
     </header>
     <section class="main-picture">
-      <h1>SEDONA</h1>
+      <h1>Sedona</h1>
       <img src="sedona" width="" height="" alt="sedona">
     </section>
     <section class="main-quote">
-      <h2>Седона - небольшой городок в Аризоне,<br>
-         заслуживающий большего</h2>
-      <h3>Рассмотрим 5 причин, по которым Седона круче, чем Гранд каньон!</h3>
+      <p>Седона - небольшой городок в Аризоне,<br>
+         заслуживающий большего</p>
+      <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд каньон!</p>
     </section>
     <section class="container">
       <div class="content1">
@@ -30,48 +35,49 @@
       <div class="content2">
         <h2>Настоящий<br>
           городок</h2>
-        <h3>-№1-
+        <p>-№1-
         Седона - не аттракцион для туристов,<br>
-        там течет своя жизнь</h3>
+        там течет своя жизнь</p>
       </div>
     </section>
     <section class="features">
-      <div class="item">
-        <a href="#"><img src="appartments" width="50"
-  height="50" alt="appartments"></a>
+      <div class="feature-item">
+        <!-- <a href="#"><img src="appartments" width="50"
+  height="50" alt="appartments"></a> как ссылка с картинкой ведущая на дополнительную страницу или просто элемент декора???-->
         <h2>Жилье</h2>
-        <h3>Рекомендуем пожить в настоящем<br>
-        мотеле, все как в кино!</h3>
+        <p>Рекомендуем пожить в настоящем<br>
+        мотеле, все как в кино!</p>
       </div>
-      <div class="item">
-        <a href="#"><img src="food" width="50"
-  height="50" alt="food"></a>
+      <div class="feature-item">
+        <!--<a href="#"><img src="food" width="50"
+  height="50" alt="food"></a>-->
         <h2>Еда</h2>
-        <h3>Всегда заказывайте фирменный бургер,<br>
-        вы не разочаруетесь!</h3>
+        <p>Всегда заказывайте фирменный бургер,<br>
+        вы не разочаруетесь!</p>
       </div>
-      <div class="item">
-        <a href="#"><img src="suvenires" width="50"
-  height="50" alt="suvenires"></a>
+      <div class="feature-item">
+        <!--<a href="#"><img src="suvenires" width="50"
+  height="50" alt="suvenires"></a>-->
         <h2>Сувениры</h2>
-        <h3>Не только китайского,<br>
-           но и местного производства!</h3>
+        <p>Не только китайского,<br>
+           но и местного производства!</p>
       </div>
       <section class="container2">
         <div content-1>
           <img src="sedona2" height="" width="" alt="sedona2">
         </div>
+        <div content-2>
           <h2>Там есть мост дьявола</h2>
-          <h3>-№2- Да, по нему можной пройти! Если конечно<br>
-          вы осмелитесь</h3>
+          <p>-№2- Да, по нему можной пройти! Если конечно<br>
+          вы осмелитесь</p>
         </div >
       </section>
       <section class="features2">
         <div class="features-left">
           <h2>Небольшая площадь</h2>
-          <h3>-№3-<br>
+          <p>-№3-<br>
           Все достопримечательности<br>
-        находятся очень близко</h3>
+        находятся очень близко</p>
         </div>
         <div class="features-middle">
           <h2>Красивая дорога</h2>
@@ -81,16 +87,17 @@
         </div>
         <div class="features-right">
           <h2>Мало туристов</h2>
-          <h3>-№5-
+          <p>-№5-
             Большинство едет в Гранд каньон и<br>
-          толпится там</h3>
+          толпится там</p>
         </div>
         <section class="direction">
           <form action="" method="post">
             <h2>Заинтересовались?</h2>
-              <h3>Укажите предполагаемые даты поездки,<br>
-          и мы покажем вам лучшие предложения гостиниц в Седоне</h3>
+              <p>Укажите предполагаемые даты поездки,<br>
+          и мы покажем вам лучшие предложения гостиниц в Седоне</p>
                 <a class="btn" href="#">Поиск гостиницы в седоне </a>
+            <div class="direction-search">
               <label for="data1">Дата заезда:</label>
                  <input type="date" name="data1">
                  <input type="image" name="data1" src="calendar"  alt="calendar">
@@ -113,12 +120,15 @@
           <a href="googlemaps"><img src="maps" width="" height="" alt="maps"></a>
         </section>
     <footer>
+      <div class="box-1">
         <h3>#VISITSEDONA</h3>
       </div>
+      <div class="box-2">
         <a href="vk"><img src="vk" width="" height="" alt="vk" /></a>
         <a href="fb"><img src="fb" width="" height="" alt="fb" /></a>
         <a href="yb"><img src="yb" width="" height="" alt="youtube" /></a>
       </div>
+      <div class="box-3">
           <img src="htmlacademy" height="" width="" alt="htmlacademy">
       </div>
     </footer>
