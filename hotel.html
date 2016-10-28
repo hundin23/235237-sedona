@@ -6,13 +6,14 @@
     <link href="style.css" rel="stylesheet">
   </head>
   <body>
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/5.0.0/normalize.css" type="text/css"/>
     <header>
       <nav>
         <ul>
-          <li><a href="#">Информация</a></li>
-          <li><a href="#">Фото и видео</a></li>
-          <li><a href="#">Карта штата</a></li>
-          <li><a href="#">Гостиницы</a></li>
+          <li><a href="hotel.html">Информация</a></li>
+          <li><a href="hotel.html">Фото и видео</a></li>
+          <li><a href="hotel.html">Карта штата</a></li>
+          <li><a href="hotel.html">Гостиницы</a></li>
         </ul>
         <div class="logo">
           <a href="#"><img src="logo" width="" height="" alt="logo"></a>
@@ -20,9 +21,9 @@
         </ul>
       </nav>
     </header>
-    <section class="container-3">
+    <section class="desk-choice">
       <form  action="#" method="post">
-      <div class="container-3-left">
+      <div class="desk-choice-box">
       <h2>Инфраструктура:</h2>
         <input type=="pool" id="pool-field" checked>
           <label for="pool-field">Бассейн<label>
@@ -31,7 +32,7 @@
         <input type="checkbox" name="wifi" id="wifi-field">
           <label for="wifi-field">Wifi<label>
       </div>
-      <div class="container-3-middle">
+      <div class="desk-choice-box">
       <h2>Тип жилья:</h2>
         <input type="checkbox" name="hotel" id="hotel-field" checked>
           <label for="hotel-field">Гостиница<label>
@@ -40,113 +41,89 @@
         <input type="checkbox" name="apartments" id="apartments-field" checked>
           <label for="apartments-field">Апартаменты<label>
       </div>
-      <div class="container-3-right">
+      <div class="desk-choice-box">
         <label for="payments-field"><h2>Стоимость в сутки (Р)</h2>:<label>
          ОТ 0 <input type="range" name="payments" id="payments-field" min="0" max="3000" step="100" > ДО 3000
         <button type="submit">Показать</button>
       </div>
     </form>
     </section>
-    <section class="navigation">
-       <div ="nav-1">
-        <h2>Найдено:3</h2>
+    <section class="hotel-search">
+       <div ="results">
+        <h3>Найдено:3</h3>
        </div>
-       <div ="nav-2">
+       <div ="sorting">
         <nav>
-          <span><a href="#">Сортировка:</span>
+          <a href="#">Сортировка:</a>
           <ul>
             <li><span><a href="#">По цене</a></span></li>
             <li><span><a href="#">По типу</a></span></li>
             <li><span><a href="#">По рейтинг</a></span></li>
           </ul>
       </div>
-      <div class="nav-3">
+      <div class="button-triangle">
         <button type="submit"><a href="#"><img src="up" width="" height="" alt="up"></a></button>
         <button type="submit"><a href="#"><img src="down" width="" height=""alt="down"></a></button>
       </div>
     </section>
-    <article class="responce-1">
+    <article class="responce">
       <div class="image">
         <img src="Amara" height="" width="" alt="Amara">
       </div>
       <div class="substance">
-        <h1>Amara Resort & Spa</h1>
-        <ul class="information-1">
-          <li>
+        <h1><a href="#">Amara Resort amp Spa</a></h1>
+        <div class="information-1">
             <span>Гостиница</span>
-          </li>
-          <li>
             <span>от 3500р.</span>
-          </li>
-        </ul>
-        <ul class="information-2">
-          <li>
-            <button type="button" name="button"><a href="#">Подробнее</a></button>
-          </li>
-          <li>
-            <button type="button" name="button"><a href="#">Забронировать</a></button>
-          </li>
-        </ul>
+        </div>
+        <div class="information-2">
+          <a href="#">Подробнее</a>
+          <a href="#">Забронировать</a>
+        </div>
       </div>
       <div class="result">
         <img src="stars" alt="stars" />
-        <span>Рейтинг: 8,9</span>
+        <h2>Рейтинг: 8,9</h2>
       </div>
     </article>
-    <article class="responce-2">
+    <article class="responce">
       <div class="image">
         <img src="Desert" height="" width="" alt="Desert">
       </div>
       <div class="substance">
-        <h1>Desert Quail Inn</h1>
-        <ul class="information-1">
-          <li>
+        <h1><a href="#">Desert Quail Inn</a></h1>
+        <div class="information-1">
             <span>Мотель</span>
-          </li>
-          <li>
             <span>от 2000р.</span>
-          </li>
-        </ul>
-        <ul class="information-2">
-          <li>
+        </div>
+        <div="information-2">
             <a href="#">Подробнее</a>
-          </li>
-          <li>
-            <button type="button" name="button">Забронировать</button>
-          </li>
-        </ul>
+            <a href="#">Забронировать</a>
+        </div>
       </div>
       <div class="result">
         <img src="stars" alt="stars" />
-        <span>Рейтинг: 8,5</span>
+        <h2>Рейтинг: 8,5</h2>
       </div>
     </article>
-    <article class="responce-3">
+    <article class="responce">
       <div class="image">
         <img src="" height="" width="" alt="">
       </div>
       <div class="substance">
-        <h1>Villas at Poco Diablo</h1>
-        <ul class="information">
-          <li>
+        <h1><<a href="#">Villas at Poco Diablo</a></h1>
+        <div class="information-1">
             <span>Апартаменты</span>
-          </li>
-          <li>
             <span>от 4000р.</span>
-          </li>
-        </ul>
-        <ul class="information">
-          <li>
+       </div>
+        <div class="information-2">
             <a href="#">Подробнее</a>
-          </li>
-          <li>
-            <button type="button" name="button">Забронировать</button>
-          </li>
-        </ul>
+          <a href="#">Забронировать</a>
+        </div>
       </div>
       <div class="result">
         <img src="stars" alt="stars" />
-        <span>Рейтинг: 9,2</span>
+        <h2>Рейтинг: 9,2</h2>
       </div>
     </article>
      <footer>

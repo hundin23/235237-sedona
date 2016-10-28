@@ -1,0 +1,117 @@
+ul .main-menu {
+font-size:14px;
+font-weight: normal;
+font-family: "PTSans Bold", sans-serif;
+line-height: 26px;
+color: #000000;}
+
+.main-quote h1{
+  font-size:21px;
+  font-weight: bold;
+  font-family: "PTSans Bold", sans-serif;
+  line-height: 26px;
+  color: #000000;
+}
+
+.features-1 .feature-item h2 {
+  font-size:21px;
+  font-weight: bold;
+  font-family: "PTSans Bold", sans-serif;
+  line-height: 21px;
+  color: #000000;
+}
+
+.features-1 .feature-item p {
+  font-size:14px;
+  font-family: "PTSans Regular", sans-serif;
+  line-height: 21px;
+  color: #000000;
+}
+
+.container-1 .content:nth-child(2) h2,
+ .container-2 .content:nth-child(2) h2,
+ .section .features-2 .features h2 {
+  font-size:21px;
+  font-weight: bold;
+  font-family: "PTSans Bold", sans-serif;
+  line-height: 21px;
+}
+
+.container-1 .content:nth-child(2) p,
+.container-2 .content:nth-child(2) p,
+.section .features-2 .features p {
+  font-size:14px;
+  font-family: "PTSans Regular", sans-serif;
+  line-height: 21px;
+}
+.container-1 .content:nth-child(2) p,
+.container-2 .content:nth-child(2) p,
+.container-1 .content:nth-child(2) h2,
+ .container-2 .content:nth-child(2) h2
+{color: #ffffff;}
+.section .features-2 .features p,
+.section .features-2 .features h2
+{color:#000000}
+
+.main-quote p{
+  font-size:14px;
+  font-weight: normal;;
+  font-family: "PTSans Regular", sans-serif;
+  line-height: 26px;
+  color: #000000;
+}
+.reccomended a {
+  font-size:21px;
+  font-weight: bold;
+  font-family: "PTSans Bold", sans-serif;
+  line-height: 26px;
+  color: #ffffff;
+}
+.reccomended h3{
+  font-size:30px;
+  font-weight: bold;
+  font-family: "PTSans Bold", sans-serif;
+  line-height: 24px;
+  color: #000000;
+}
+
+.reccomended span {
+  font-size:14px;
+  font-weight: bold;
+  font-family: "PTSans Regular", sans-serif;
+  line-height: 24px;
+  color: #000000;
+}
+
+.search-hotels .buttons {
+  font-size:21px;
+  font-weight: normal;;
+  font-family: "PTSans Regular", sans-serif;
+  line-height: 26px;
+  color: #ffffff;
+}
+.footer a {
+  font-size:21px;
+  font-weight: bold;
+  font-family: "PTSans Bold", sans-serif;
+  line-height: 26px;
+  color: #000000;
+}
+.footer .box .span {
+  font-size:14px;
+  font-weight: normal;;
+  font-family: "PTSans Regular", sans-serif;
+  line-height: 26px;
+  color: #000000;
+}
+.footer a:first-child, a:nth-child(2), a:last-child{
+  font-weight: normal;;
+  font-family: "symbols sedona", sans-serif;
+  line-height: 20px;
+  color: #ffffff;
+}
+.footer a:first-child, a:nth-child(2)
+{font-size:19px;}
+
+a:last-child
+{font-size:23px;}
