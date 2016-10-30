@@ -1,7 +1,39 @@
-.body  {
+html,
+
+body {
+    margin: 0;
+    padding: 0;}
+
+body  {
+  min-width: 1200px;
+  min-height: 2650px;
+  height:auto;
   font-size:21px;
   font-weight: bold;
   font-family: "PTSans Bold", sans-serif;
   line-height: 26px;
   color: #000000;
 }
+
+.header .nav {
+  min-width: 1080px;
+  min-height: 50px;
+  margin: 0 auto;
+  padding: 0, 10px;
+}
+
+.main-nav li {
+float:left;
+width: 190px;
+min-height: 50px;
+padding: 20px,60px;
+box-sizing: border-box;
+}
+
+.main-nav li:nth-last-child {float:right}
+
+.main-nav logo {
+  float:left;
+  width: 140px;
+  min-height: 50px;
+  padding: 0,50px;
