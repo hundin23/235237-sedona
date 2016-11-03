@@ -2,11 +2,11 @@ html,
 
 body {
     margin: 0;
-    padding: 0;}
+    padding: 0;
+    min-width: 1200px;
+    min-height: 2650px;}
 
 body  {
-  min-width: 1200px;
-  min-height: 2650px;
   height:auto;
   font-size:21px;
   font-weight: bold;
@@ -15,6 +15,9 @@ body  {
   color: #000000;
 }
 
+body{background: #ffffff url("filter-background.jpg") no-repeat 50% 3px;
+  background-size: 1200px auto;}
+
 .header .nav {
   min-width: 1080px;
   min-height: 50px;
@@ -22,6 +25,9 @@ body  {
   padding: 0, 10px;
 }
 
+.header {
+  margin-bottom: 75px;
+}
 .main-nav li {
 float:left;
 width: 190px;
@@ -36,4 +42,159 @@ box-sizing: border-box;
   float:left;
   width: 140px;
   min-height: 50px;
-  padding: 0,50px;
+  padding: 0,50px;}
+
+  .main-picture {
+  margin-left: auto;
+  margin-right: auto;
+  width: 458px;
+  height: 352px;
+  margin-bottom:35px;
+  background-image: url("img/group-welcome.png") no-repeat;
+  }
+
+  .main-quote,
+  .features,
+  .advantages {
+  margin-left: auto;
+  margin-right: auto;
+  }
+
+p .main-quote {margin-bottom: 169px}
+
+.features-image:first-child {
+  background-image: url(img\open-range.jpg) no-repate;
+  float: right;
+  padding-right: 44px;
+}
+
+.advantages-item {
+  float: left;
+  width: 380px;
+  padding-left: 10px;
+  margin-bottom: 85px;
+}
+
+.features-image:last-child{
+  background-image: url(img/canyon.jpg) no-repate;
+  float: left;
+  padding-left: 44px;
+  margin-bottom: 65px;
+}
+
+.features-item {
+  float: left;
+  width: 380px;
+  padding-left: 10px;
+  margin-bottom: 55px;
+}
+.features-item:last-child {
+  margin-right: 0;
+}
+
+.recommended {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.recommended a {
+  width: 570px;
+  height: 90;
+  padding: 45px, 140px;
+  margin-bottom: 85px;
+}
+
+.search-hotels {
+  padding: 50px;}
+
+  .search-hotels:nth-child(3),
+  .search-hotels:last-child, {
+    display: inline-block;
+  }
+
+.search-hotels button {
+  padding: 5px, 195px;
+}
+
+.desk-choice {
+min-width: 1200px;
+min-height: 215px;
+margin-left: auto;
+margin-right: auto;
+margin-bottom: 70px;
+}
+
+.desk-choice-box:first-child {
+  width: 300px;
+  padding-left: 10px;
+  float: left;
+}
+
+.desk-choice-box:nth-child(2) {
+  width: 270px;
+  padding-left: 10px;
+  float: left;
+}
+
+.desk-choice-box:last-child) {
+  width: 600px;
+  padding-left: 0;
+  float: right;
+}
+
+.hotel-search {
+  min-width: 1200px;
+  min-height: 85px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 55px;
+}
+
+.results {
+  float: left;
+  width: 230px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  margin-right: 40px; }
+
+
+.sorting {
+  float: left;
+  width: 820px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  margin-right: 480px;
+  box-sizing: border-box;
+}
+
+.button-triangle {
+  float: left;
+  width: 150px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  margin-right: 0;
+  box-sizing: border-box;
+}
+footer {
+  margin-top: 35px;
+  padding-top: 30px;
+  padding-right: 105;
+  padding-left: 130px;
+  padding-bottom: 30px;
+}
+
+.information {
+  width: 1200px;
+  min-height: 455px;
+}
+
+.box {
+  float: left;;
+  margin-right: 10px;
+  width: 380px;
+  min-height: 115px;
+}
+
+.box:last-child {
+margin-right: 0;
+}
