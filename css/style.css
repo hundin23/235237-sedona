@@ -22,15 +22,12 @@ body  {
   clear: both;
 }
 
-.header {
-  margin-bottom: 50px;
-}
+.container {
+width: 1200px;
+margin: auto;}
 
 .header .nav {
-  min-width: 1200px;
-  min-height: 50px;
-  margin: 0 auto;
-}
+  min-height: 50px;}
 
 .main-nav li {
 float:left;
@@ -54,11 +51,7 @@ width: 240px;
 
 section  .main-picture {
   background: #ffffff url("filter-background.jpg") no-repeat;
-  background-size: 1200px auto;
-  width: 1200px;
-  margin: 0;
-  padding: 0, 10px;
-  }
+  width: 1200px;}
 
 .main-picture img:nth-child(2)  {
   background-image: url("img/group-welcome.png") no-repeat;
@@ -67,80 +60,64 @@ section  .main-picture {
   left:35%;
 }
 
-.main-quote {
-    padding: 50px,360px;
-    margin-bottom: 169px;
-  }
+section .main-quote {
+    width: 1200px;}
 
-  .features {
+section .features {
   margin-left: auto;
   margin-right: auto;
+  width: 1200px;
   }
 
 .features-image:first-child {
   background-image: url(img\open-range.jpg) no-repate;
   float: right;
-  padding-right: 44px;
+  width: 800px;
 }
 
-.advantages {
-  width: 1200px;
-  margin-left: 0;
-  padding: 0 10px;
+ .features-image:last-child {
+  background-image: url(img/canyon.jpg) no-repate;
+  float: left;
+  width: 800px;}
+
+.features-item {
+  width: 400px;
+  float: left;
 }
+
+section .advantages {
+  width: 1200px;}
 
 .advantages-item {
   float: left;
-  width: 380px;
-  margin-bottom: 85px;
-  margin-left: 0;
-}
+  width: 400px;}
 
 .advantages-item:nth-last-child {
   float: right;
 }
 
-.features-image:last-child{
-  background-image: url(img/canyon.jpg) no-repate;
-  float: left;
-  padding-left: 44px;
-  margin-bottom: 65px;
-}
-
-.features-item {
-  float: left;
-  width: 380px;
-  padding-left: 10px;
-  margin-bottom: 55px;
-}
-.features-item:last-child {
-  margin-right: 0;
-}
-
-.recommended {
-  margin-left: auto;
-  margin-right: auto;
+section .recommended {
+width: 1200px;
 }
 
 .recommended a {
-  width: 570px;
-  height: 90;
-  padding: 45px, 140px;
-  margin-bottom: 85px;
+  width: 400px;
 }
 
-.search-hotels {
-  padding: 50px;}
+section .search-hotels {
+  width: 1200px }
 
-  .search-hotels:nth-child(3),
-  .search-hotels:last-child, {
-    display: inline-block;
-  }
+.direction-search label {width: 580;}
+
+.direction-search label:nth-child(3),
+ { float: left;
+ width: 290px;}
 
 .search-hotels button {
-  padding: 5px, 195px;
+width: 460px;
 }
 
+/*
 .desk-choice {
 min-width: 1200px;
 min-height: 215px;
@@ -231,19 +208,16 @@ float: left;
   float: right;
 }
 
+*/
+
 footer {
-  margin-top: 35px;
-  padding-top: 30px;
-  padding-right: 105;
-  padding-left: 130px;
-  padding-bottom: 30px;
+min-height: 120px;
+width: 1200px;
 }
 
 .box {
-  float: left;;
-  margin-right: 10px;
-  width: 380px;
-  min-height: 115px;
+  float: left;
+  width: 400px;
 }
 
 .box:last-child {
