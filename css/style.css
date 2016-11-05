@@ -9,8 +9,8 @@ body {
 body  {
   height:auto;
   font-size:21px;
-  font-weight: bold;
-  font-family: "PTSans Bold", sans-serif;
+  font-weight: normal;;
+  font-family: "PTSans Regular", sans-serif;
   line-height: 26px;
   color: #000000;
 }
@@ -22,13 +22,15 @@ body  {
   clear: both;
 }
 
+h1, h2, p {text-transform: uppercase;}
+
 .container {
 width: 1200px;
 margin: auto;}
 
-.header .nav {
-  min-height: 50px;}
-
+.main-nav {
+  margin: 0;
+}
 .main-nav li {
 float:left;
 width: 240px;
@@ -41,12 +43,12 @@ width: 240px;
 .main-nav li:nth-child(2) {
   margin-right:240px;
 }
-.main-nav logo {
+.main-nav .logo {
   display: block;
   position: absolute;
   top:0;
   left:50%;
-  margin-left:120px;
+  margin-left: -60px;
 }
 
 section  .main-picture {
@@ -60,8 +62,9 @@ section  .main-picture {
   left:35%;
 }
 
-section .main-quote {
-    width: 1200px;}
+.main-quote {
+  width: 1200px;
+  text-align: center;}
 
 section .features {
   margin-left: auto;
@@ -69,13 +72,13 @@ section .features {
   width: 1200px;
   }
 
-.features-image:first-child {
-  background-image: url(img\open-range.jpg) no-repate;
+.features-image {
+  background-image: url(img/open-range.jpg) no-repate;
   float: right;
   width: 800px;
 }
 
- .features-image:last-child {
+ .features-picture {
   background-image: url(img/canyon.jpg) no-repate;
   float: left;
   width: 800px;}
@@ -83,14 +86,22 @@ section .features {
 .features-item {
   width: 400px;
   float: left;
+  text-align: center;
 }
+
+.features-item  {
+background-color: #eeeeee; }
+
+.features-item .features-text {
+  background-color: #81b3d2;}
 
 section .advantages {
   width: 1200px;}
 
 .advantages-item {
   float: left;
-  width: 400px;}
+  width: 400px;
+ text-align: center;}
 
 .advantages-item:nth-last-child {
   float: right;
@@ -98,23 +109,33 @@ section .advantages {
 
 section .recommended {
 width: 1200px;
+text-align: center;
 }
 
 .recommended a {
   width: 400px;
+  text-align: center;
 }
 
 section .search-hotels {
   width: 1200px }
 
-.direction-search label {width: 580;}
+form {
+   display: block;
+   position: absolute;
+   bottom:50%;
+   left:50%;
+   margin-left: -300px;
+ }
+
+/*.direction-search label {width: 580;}
 
 .direction-search label:nth-child(3),
  { float: left;
  width: 290px;}
 
 .search-hotels button {
-width: 460px;
+width: 460px;*/
 }
 
 /*
@@ -211,7 +232,6 @@ float: left;
 */
 
 footer {
-min-height: 120px;
 width: 1200px;
 }
 
