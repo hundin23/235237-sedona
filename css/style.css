@@ -141,9 +141,10 @@ width: 460px;
 .desk-choice {
 min-width: 1200px;
 margin: 0;
+background: url (img/filter-sepia.jpg) no-repate;
 }
 
-.desk-choice-box:nth-child(1) {
+.desk-choice-box:first-child {
   width: 25%;
   float: left;
 }
@@ -155,7 +156,7 @@ margin: 0;
 
 .desk-choice-box:last-child {
   width: 50%;
-  margin-right: 0;
+  float: right;
 }
 
 .hotel-search {
