@@ -17,7 +17,6 @@ body  {
 
 .clearfix::after {
   content: "";
-
   display: table;
   clear: both;
 }
@@ -154,8 +153,9 @@ margin: 0;
   float: left;
 }
 
-.desk-choice-box:nth-child(3) {
+.desk-choice-box:last-child {
   width: 50%;
+  margin-right: 0;
 }
 
 .hotel-search {
