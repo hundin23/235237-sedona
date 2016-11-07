@@ -8,7 +8,7 @@ body {
 
 body  {
   height:auto;
-  font-size:14px;
+  font-size:12px;
   font-weight: normal;;
   font-family: "PTSans Regular", sans-serif;
   line-height: 21px;
@@ -21,7 +21,9 @@ body  {
   clear: both;
 }
 
-h1, h2, p {text-transform: uppercase;}
+h1, h2, p, a {text-transform: uppercase;}
+a {text-decoration: none;}
+ul { list-style-type: none;}
 
 .container {
 width: 1200px;
@@ -29,11 +31,15 @@ margin: auto;}
 
 .main-nav {
 padding: 0;
+padding-bottom: 25px;
 position: relative;
 }
 .main-nav li {
 float:left;
 width: 240px;
+padding-left: 70px;
+padding-right: 70px;
+box-sizing: border-box;
 }
 
 .main-nav li:nth-last-child {
@@ -43,7 +49,8 @@ width: 240px;
 .main-nav li:nth-child(2) {
   margin-right:240px;
 }
-.main-nav .logo {
+
+.logo {
   display: block;
   position: absolute;
   top:0;
@@ -64,7 +71,9 @@ section  .main-picture {
 
 .main-quote {
   width: 1200px;
-  text-align: center;}
+  text-align: center;
+  padding-top: 55;
+  padding-bottom: 55; }
 
 section .features {
   margin-left: auto;
@@ -73,27 +82,27 @@ section .features {
   }
 
 .features-image {
-  background-image: url(img/open-range.jpg) no-repate;
+  background-image: url(img/open-range.jpg) no-repeat;
   float: right;
   width: 800px;
 }
 
  .features-picture {
-  background-image: url(img/canyon.jpg) no-repate;
+  background-image: url(img/canyon.jpg) no-repeat;
   float: left;
   width: 800px;}
 
 .features-item {
-  width: 400px;
-  float: left;
-  text-align: center;
-}
-
-.features-item  {
-background-color: #eeeeee; }
+width: 400px;
+float: left;
+text-align: center;
+background-color: #eeeeee;
+padding-bottom: 55px;
+padding-top: 55px; }
 
 .features-item .features-text {
-  background-color: #81b3d2;}
+  background-color: #81b3d2;
+}
 
 section .advantages {
   width: 1200px;}
@@ -101,7 +110,9 @@ section .advantages {
 .advantages-item {
   float: left;
   width: 400px;
- text-align: center;}
+ text-align: center;
+ padding-bottom: 55px;
+ padding-top: 55px;}
 
 .advantages-item:nth-last-child {
   float: right;
@@ -110,6 +121,8 @@ section .advantages {
 .recommended {
 width: 1200px;
 text-align: center;
+padding-bottom: 55px;
+padding-top: 55px;
 }
 
 .recommended a {
@@ -138,10 +151,12 @@ section .search-hotels {
 width: 460px;
 }
 
-.desk-choice {
+section .desk-choice {
 min-width: 1200px;
 margin: 0;
-background: url (img/filter-sepia.jpg) no-repate;
+background-image: url (css/img/filter-sepia.jpg) no-repeat;
+padding-top: 30px;
+padding-bottom: 30px;
 }
 
 .desk-choice-box:first-child {
@@ -161,6 +176,8 @@ background: url (img/filter-sepia.jpg) no-repate;
 
 .hotel-search {
   min-width: 1200px;
+  padding-bottom: 25px;
+  padding-top: 25px;
 }
 
 .results {
@@ -172,8 +189,11 @@ background: url (img/filter-sepia.jpg) no-repate;
   width: 780px;}
 
 .sorting li {
-  float: left;
-  width: 260px;
+    float: left;
+    width: 260px;}
+
+.sorting li:last-child {
+  float: right;
 }
 
 .button-triangle {
@@ -182,8 +202,7 @@ background: url (img/filter-sepia.jpg) no-repate;
 
 article .responce {
   width: 1200px;
-padding-left: 72px;
-padding-right: 72px;}
+padding: 30px, 72px;}
 
 .hotel-links  {
 width: 165px;
@@ -205,6 +224,8 @@ width: 1200px;
 .box {
   float: left;
   width: 400px;
+  padding-bottom: 55px;
+  padding-top: 55px;
 }
 
 .box:last-child {
