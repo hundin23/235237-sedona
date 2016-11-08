@@ -3,16 +3,17 @@ html,
 body {
     margin: 0;
     padding: 0;
-    min-width: 1200px;
-    min-height: 2650px;}
+    width: 100%;
+    min-height: 100%;}
 
 body  {
   height:auto;
-  font-size:12px;
+  font-size:14px;
   font-weight: normal;;
   font-family: "PTSans Regular", sans-serif;
   line-height: 21px;
   color: #000000;
+  background-color: #f2f2f2;
 }
 
 .clearfix::after {
@@ -21,17 +22,22 @@ body  {
   clear: both;
 }
 
-h1, h2, p, a {text-transform: uppercase;}
+h1, h2, h3, p, a {text-transform: uppercase;}
 a {text-decoration: none;}
 ul { list-style-type: none;}
 
+h3 {font-size: 30px;}
+h2 {font-size: 21px;}
+
 .container {
 width: 1200px;
-margin: auto;}
+margin: auto;
+background-color: #ffffff;}
 
 .main-nav {
 padding: 0;
 padding-bottom: 25px;
+padding-top: 25;
 position: relative;
 }
 .main-nav li {
@@ -73,12 +79,15 @@ section  .main-picture {
   width: 1200px;
   text-align: center;
   padding-top: 55;
-  padding-bottom: 55; }
+  padding-bottom: 55;
+  line-height: 26px;}
 
 section .features {
   margin-left: auto;
   margin-right: auto;
   width: 1200px;
+  background-color: #81b3d2;
+  color: #ffffff;
   }
 
 .features-image {
@@ -96,23 +105,26 @@ section .features {
 width: 400px;
 float: left;
 text-align: center;
-background-color: #eeeeee;
 padding-bottom: 55px;
 padding-top: 55px; }
 
-.features-item .features-text {
-  background-color: #81b3d2;
-}
+section .features-color {
+  background-color: #eeeeee;
+  color: #000000;}
 
 section .advantages {
   width: 1200px;}
 
 .advantages-item {
-  float: left;
-  width: 400px;
- text-align: center;
- padding-bottom: 55px;
- padding-top: 55px;}
+float: left;
+width: 400px;
+text-align: center;
+padding-bottom: 55px;
+padding-top: 55px;}
+
+.advantages-item h2 {
+  font-size: 21px;
+}
 
 .advantages-item:nth-last-child {
   float: right;
@@ -123,6 +135,7 @@ width: 1200px;
 text-align: center;
 padding-bottom: 55px;
 padding-top: 55px;
+line-height: 24px;
 }
 
 .recommended a {
