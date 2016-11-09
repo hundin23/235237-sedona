@@ -3,8 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
-    <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
   </head>
   <body>
     <div class="container">
@@ -71,8 +71,7 @@
              <p>Да, по нему можной пройти! Если конечно вы осмелитесь</p>
           </div>
       </section>
-      <section class="features clearfix">
-         <div class="features-color">  <!--  для задания цвета -->
+      <section class="features features-grey clearfix">
         <div class="features-item clearfix">
           <h2>Небольшая площадь</h2>
           <span>-№3-</span>
@@ -88,11 +87,10 @@
           <span> -№5- </span>
           <p>Большинство едет в Гранд каньон и толпится там</p>
         </div>
-      </div>
         </section>
         <section class="recommended">
             <h3>Заинтересовались?</h3>
-              <p>Укажите предполагаемые даты поездки,
+              <p>Укажите предполагаемые даты поездки,<br>
           и мы покажем вам лучшие предложения гостиниц в Седоне</p>
                 <a class="btn" href="#">Поиск гостиницы в седоне </a>
         </section>
@@ -102,20 +100,14 @@
             <label for="data1">Дата заезда:</label>
                <input type="date" name="data1">
                <span>24 апреля 2016</span>
-               <input type="image" name="data1" src="calendar"  alt="calendar">
             <label for="data2">Дата выезда:</label>
                <input type="date" name="data2">
                <span>4 июля 2016</span>
-               <input type="image" name="data2" src="calendar"  alt="calendar">
             <label for="adults">Взрослые:</label>
                <input type="number" min="1" max="10" step="1">
-               <input type="image" name="adults" src="minuse"  alt="minuse">
-               <input type="image" name="adults" src="plus"  alt="plus">
                <span>2</span>
             <label for="kids">Дети:</label>
                <input type="number" min="0" max="10" step="1">
-               <input type="image" name="kids" src="minuse"  alt="minuse">
-               <input type="image" name="kids" src="plus"  alt="plus">
                <span>0</span>
              <button class="btn">Найти</button>
           </div>
