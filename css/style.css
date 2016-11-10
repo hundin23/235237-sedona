@@ -28,7 +28,8 @@ h2 {font-size: 21px;}
 .container {
  width: 1200px;
  margin: auto;
- background-color: #ffffff;}
+ background-color: #ffffff;
+ box-shadow:  0 0 10px #e4e3e1;}
 
 .main-nav {
   position: relative;
@@ -36,12 +37,14 @@ h2 {font-size: 21px;}
   margin: 0;}
 
 .main-nav a {
-  display: block;
-  padding: 25px, 20px;
   color: #000000;}
 
 .main-nav li {
+  display: block;
   float:left;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: center;
   width: 240px;}
 
 .main-nav li:nth-last-child {
@@ -55,9 +58,9 @@ h2 {font-size: 21px;}
   position: absolute;
   top:0;
   left:50%;
-  margin-left: -60px;}
+  margin-left: -45px;}
 
-section  .main-picture {
+section .main-picture {
   background: #ffffff url("filter-background.jpg") no-repeat;
   width: 1200px;}
 
@@ -72,7 +75,7 @@ section  .main-picture {
   width: 1200px;
   text-align: center;
   line-height: 26px;
-  padding: 45px, 50px;}
+  padding: 55px 40px;}
 
 section .features{
   margin-left: auto;
@@ -86,19 +89,21 @@ section .features{
 .features-image {
   background-image: url(img/open-range.jpg) no-repeat;
   float: right;
+  line-height: 0;
   width: 800px;}
 
 .features-picture {
-background-image: url(img/canyon.jpg) no-repeat;
-float: left;
-width: 800px;}
+  background-image: url(img/canyon.jpg) no-repeat;
+  line-height: 0;
+  float: left;
+  width: 800px;}
 
 .features-item {
-width: 400px;
-float: left;
-text-align: center;
-padding-bottom: 45px;
-padding-top: 45px; }
+  width: 400px;
+  float: left;
+  text-align: center;
+  padding-bottom: 44px;
+  padding-top: 44px; }
 
 .features-grey {
 background-color: #eeeeee;
@@ -121,86 +126,110 @@ font-size: 21px;}
 float: right;}
 
 .recommended {
-width: 1200px;
-text-align: center;
-padding-bottom: 55px;
-padding-top: 55px;
-line-height: 24px;
-}
+  width: 1200px;
+  text-align: center;
+  padding-bottom: 55px;
+  padding-top: 55px;
+  line-height: 24px;}
 
 .recommended a {
-width: 580px;
-background-color: #766357;
-text-align: center;
-padding: 30px, 145px;
-color: #ffffff;}
+  width: 600px;
+  background-color: #766357;
+  text-align: center;
+  cursor: pointer;
+  padding: 30px 145px;
+  margin:50px 300px;
+  color: #ffffff;}
 
 section .search-hotels {
-width: 1200px }
+  width: 1200px }
 
 .search-hotels form {
    display: block;
-   position: relative;
-   bottom:50%;
+   position: relative;;
+   top:50%;
    left:50%;
    margin-left: -300px;
-   width: 580px;
-   margin-top: 0;
+   width: 600px;
+   height: 400px;
+   margin-top: -30px;
+   box-shadow:  0 0 10px #e4e3e1;
  }
 
-.direction-search label {width: 580;}
+.search-hotels input {
+  font: inherit;
+  width: 350px;
+  height: 40px;
+  background-color: #f2f2f2;
+  border: none;
+  margin: 25px 20px;}
 
-.direction-search label:nth-child(3),
- { float: left;
- width: 290px;}
+.people input {
+  width: 120px;
+}
+.search-hotels .btn {
+  display: block;
+  font: inherit;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-decoration:none;
+
+  background-color: #81b3d2;
+  border: none;
+  cursor: pointer;
+  padding: 20px 200px;
+  margin: 30px 70px;}
+
+
+.direction-search label {
+  width: 580;}
+
+.direction-search label:nth-child(3),{
+  float: left;
+  width: 290px;}
 
 .search-hotels button {
-width: 460px;
-}
+  width: 460px;}
 
 section .desk-choice {
-min-width: 1200px;
-margin: 0;
-background-image: url (.../img/filter-sepia.jpg) no-repeat;
-padding-top: 30px;
-padding-bottom: 30px;
-}
+  min-width: 1200px;
+  margin: 0;
+  background-image: url (.../img/filter-sepia.jpg) no-repeat;
+  padding-top: 30px;
+  padding-bottom: 30px;}
 
 .desk-choice-box:first-child {
   width: 25%;
-  float: left;
-}
+  float: left;}
 
 .desk-choice-box:nth-child(2) {
   width: 25%;
-  float: left;
-}
+  float: left;}
 
 .desk-choice-box:last-child {
   width: 50%;
-  float: right;
-}
+  float: right;}
 
 .hotel-search {
   min-width: 1200px;
-  padding-bottom: 25px;
-  padding-top: 25px;
-}
+  padding-bottom: 25px;}
 
 .results {
   float: left;
-  width: 210px; }
+  width: 210px;
+  padding-top: 30px;
+  margin-left: 70px; }
 
 .sorting {
   float: left;
   width: 780px;}
 
-.sorting li {
-    float: left;
-    width: 260px;}
+.sorting span {
+  float: left;
+  padding-top: 50px;}
 
-.sorting li:last-child {
-  float: right;}
+.sorting li {
+  color: #000000;}
 
 .button-triangle {
   width: 210px;
@@ -208,7 +237,8 @@ padding-bottom: 30px;
 
 article .responce {
 width: 1200px;
-padding: 30px, 72px;}
+padding: 30px 72px;
+border-bottom: 4px solid #e5e5e5;}
 
 .hotel-links {
 width: 165px;
@@ -236,8 +266,8 @@ background-color: #f9fbf6;}
 color: #000000;}
 
 .box:nth-child(2) {
-position: relative;
-}
+height: 100px;
+position: relative;}
 
 .box:nth-child(2) a:first-child,
 .box:nth-child(2) a:nth-child(2),
