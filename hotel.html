@@ -12,10 +12,10 @@
     <header>
       <nav>
         <ul class="main-nav">
-          <li><a href="#">Информация</a></li>
+          <li><a class="active" href="#">Информация</a></li>
           <li><a href="#">Фото и видео</a></li>
           <li><a href="#">Карта штата</a></li>
-          <li><a href="hotel.html">Гостиницы</a></li>
+          <li class="active"><a href="hotel.html">Гостиницы</a></li>
         </ul>
         <div class="logo">
           <a href="#"><img src="img/logo.png" width="138" height="70" alt="logo"></a>
@@ -26,9 +26,9 @@
       <form  action="#" method="post">
       <div class="desk-choice-box clearfix">
       <h2>Инфраструктура:</h2>
-        <input type="checkbox" name="pool" id="pool-field" checked>
+        <input type="checkbox" name="pool" id="pool-field" checked >
           <label for="pool-field">Бассейн</label>
-        <input type="checkbox" name="parking" id="parking-field">
+        <input type="checkbox" name="parking" id="parking-field" disabled>
           <label for="parking-field">Парковка</label>
         <input type="checkbox" name="wifi" id="wifi-field">
           <label for="wifi-field">Wifi</label>
@@ -39,14 +39,24 @@
           <label for="hotel-field">Гостиница</label>
         <input type="checkbox" name="motel" id="motel-field" checked>
           <label for="motel-field">Мотель</label>
-        <input type="checkbox" name="apartments" id="apartments-field" checked>
+        <input type="checkbox" name="apartments" id="apartments-field"  disabled checked>
           <label for="apartments-field">Апартаменты</label>
       </div>
       <div class="desk-choice-box clearfix">
-        <label for="payments-field"><h2>Стоимость в сутки (Р)</h2>:</label>
-         ОТ 0 <input type="range" name="payments" id="payments-field" min="0" max="3000" step="100" > ДО 3000
-        <button type="submit">Показать</button>
+        <div class="filter-range-title">Стоимость в сутки (р):</div>
+      <div class="price-controls">
+        <label class="min-price">от <input type="text" name="min-price" value="0"></label>
+        <label class="max-price">до <input type="text" name="max-price" value="3000"></label>
       </div>
+      <div class="range-controls">
+        <div class="scale">
+          <div class="bar"></div>
+        </div>
+        <div class="range-toggle range-toggle-min"></div>
+        <div class="range-toggle range-toggle-max"></div>
+      </div>
+      <button class="btn-transparent" type="submit">Показать</button>
+    </div>
     </form>
     </section>
     <section class="hotel-search clearfix">
@@ -56,14 +66,16 @@
        <div class="sorting clearfix">
           <span>Сортировка:</span>
           <ul>
-            <li><a href="#">По цене</a></li>
+            <li class="active"><a href="#">По цене</a></li>
             <li><a href="#">По типу</a></li>
             <li><a href="#">По рейтинг</a></li>
           </ul>
       </div>
       <div class="button-triangle clearfix">
-        <a class="triangle triangle-up" href="#">Вверх</a>
-        <a class="triangle triangle-down" href="#">Вниз</a>
+        <ul>
+        <li><a class="triangle triangle-up" href="#">Вверх</a><li>
+        <li class="active"><a class="triangle triangle-down" href="#">Вниз</a><li>
+      </ul>
       </div>
     </section>
     <article class="responce clearfix">
@@ -149,8 +161,6 @@
        </div>
        <div class="box clearfix">
          <span>Website by</span>
-           <img src="img/logo-html.png" width="113" height="39" alt="htmlacademy">
-       </div>
      </footer>
    </div>
    </body>
