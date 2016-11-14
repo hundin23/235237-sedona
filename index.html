@@ -3,8 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
-    <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
   </head>
   <body>
     <div class="container">
@@ -23,11 +23,10 @@
       </nav>
     </header>
     <section class="main-picture">
-      <img src="img/filter-background.jpg" width="1200" height="564" alt="sedona-mountains">
       <img src="img/group-welcome.png" width="458" height="352" alt="sedona-welcome">
     </section>
     <section class="main-quote">
-      <h2>Седона - небольшой городок в Аризоне,
+      <h2>Седона - небольшой городок в Аризоне,<br>
          заслуживающий большего</h2>
       <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд каньон!</p>
     </section>
@@ -36,12 +35,10 @@
         <img src="img/open-range.jpg" width="800" height="256" alt="open-range">
       </div>
       <div class="features-item clearfix">
-          <div class="features-text">
               <h2>Настоящий<br>городок</h2>
                    <span>-№1-</span>
                <p>Седона - не аттракцион для туристов, там течет своя жизнь</p>
           </div>
-      </div>
     </section>
     <section class="advantages clearfix">
       <div class="advantages-item clearfix">
@@ -68,73 +65,68 @@
           <img src="img/canyon.jpg" height="256" width="800" alt="sedona-canyon">
         </div>
         <div class="features-item clearfix">
-          <div class="features-text">
              <h2>Там есть мост дьявола</h2>
              <span>-№2-</span>
              <p>Да, по нему можной пройти! Если конечно вы осмелитесь</p>
           </div>
-        </div>
       </section>
-      <section class="features clearfix">
-         <div class="features-color">  <!--  для задания цвета -->
+      <section class="features features-grey clearfix">
         <div class="features-item clearfix">
           <h2>Небольшая площадь</h2>
           <span>-№3-</span>
-          <p>Все достопримечательности находятся очень близко </p>
+          <p>Все достопримечательности<br> находятся очень близко </p>
         </div>
         <div class="features-item clearfix">
           <h2>Красивая дорога</h2>
           <span>-№4- </span>
-          <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+          <p>Ехать в Седону из Лас-Вегаса совсем <br>не скучно!</p>
         </div>
         <div class="features-item clearfix">
           <h2>Мало туристов</h2>
           <span> -№5- </span>
-          <p>Большинство едет в Гранд каньон и толпится там</p>
+          <p>Большинство едет в Гранд каньон <br> и толпится там</p>
         </div>
-      </div>
         </section>
         <section class="recommended">
             <h3>Заинтересовались?</h3>
-              <p>Укажите предполагаемые даты поездки,
+              <p>Укажите предполагаемые даты поездки,<br>
           и мы покажем вам лучшие предложения гостиниц в Седоне</p>
                 <a class="btn" href="#">Поиск гостиницы в седоне </a>
         </section>
         <section class="search-hotels">
+          <div class="modal-content">
           <form action="#" method="post">
           <div class="direction-search">
             <label for="data1">Дата заезда:</label>
-               <input type="date" name="data1">
-               <span>24 апреля 2016</span>
-               <input type="image" name="data1" src="calendar"  alt="calendar">
+               <input type="date" name="data1" value="24 апреля 2016">
             <label for="data2">Дата выезда:</label>
-               <input type="date" name="data2">
-               <span>4 июля 2016</span>
-               <input type="image" name="data2" src="calendar"  alt="calendar">
+               <input type="date" name="data2" value="4 июля 2016">
+               <div class="people">
             <label for="adults">Взрослые:</label>
-               <input type="number" min="1" max="10" step="1">
-               <input type="image" name="adults" src="minuse"  alt="minuse">
-               <input type="image" name="adults" src="plus"  alt="plus">
-               <span>2</span>
+               <input type="number" min="1" max="10" step="1" value="2">
+               </div>
+               <div class="people">
             <label for="kids">Дети:</label>
-               <input type="number" min="0" max="10" step="1">
-               <input type="image" name="kids" src="minuse"  alt="minuse">
-               <input type="image" name="kids" src="plus"  alt="plus">
-               <span>0</span>
+               <input type="number" min="0" max="10" step="1" value="0">
+               </div>
              <button class="btn">Найти</button>
           </div>
           </form>
-          <iframe src="https://www.google.pl/maps/place/%D0%A1%D0%B5%D0%B4%D0%BE%D0%BD%D0%B0,+%D0%90%D1%80%D0%B8%D0%B7%D0%BE%D0%BD%D0%B0+86336,+%D0%A1%D0%A8%D0%90/@34.8543584,-111.8651786,12z/data=!3m1!4b1!4m5!3m4!1s0x872da132f942b00d:0x5548c523fa6c8efd!8m2!3d34.8697395!4d-111.7609896">
-</iframe>
+        </div>
+          <div class="map">
+            <img src="img/map.png" width="1200" height="538" alt="map" >
+          </div>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d104770.38012363175!2d-111.8651786027375!3d34.8543583735493!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2spl!4v1478987381672" width="1200" height="538" frameborder="0" style="border:0" allowfullscreen>
+          </iframe>
         </section>
     <footer>
       <div class="box">
         <a href="#">#VISITSEDONA</a>
       </div>
       <div class="box">
-        <a href="#"><img src="vk" width="5" height="5" alt="vk"></a>
-        <a href="#"><img src="fb" width="5" height="5" alt="fb"></a>
-        <a href="#"><img src="yb" width="5" height="5" alt="youtube"></a>
+        <a class="social-btn social-btn-tw" href="#">Твитер</a>
+        <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
+        <a class="social-btn social-btn-yb" href="#">Ютуб</a>
       </div>
       <div class="box">
         <span>Website by</span>
