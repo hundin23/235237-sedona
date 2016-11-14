@@ -134,6 +134,7 @@ font-size: 21px;}
 float: right;}
 
 .recommended {
+	position: relative;
   width: 1200px;
   text-align: center;
   padding-bottom: 55px;
@@ -150,8 +151,19 @@ float: right;}
   margin: 0 auto;
   color: #ffffff;}
 
-section .search-hotels {
-  width: 1200px }
+ .modal-content {
+  width: 480px;
+	position: absolute;
+  top: 300px;
+  left: 50%;
+
+  margin-left: -300px;
+  padding:  60px;
+
+  color: #000000;
+  background: #ffffff ;
+  box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
+ }
 
 .search-hotels form {
    display: none;
@@ -176,7 +188,7 @@ section .search-hotels {
 .people input {
   width: 120px;
 }
-.search-hotels .btn {
+.modal-content .btn {
   display: block;
   font: inherit;
   color: #ffffff;
@@ -408,6 +420,7 @@ input[type="checkbox"]:checked + label::after {
   color: #666666;}
 
 footer {
+ position: relative;
  width: 1200px;
  min-height: 120px;
  padding: 35px 72px;
