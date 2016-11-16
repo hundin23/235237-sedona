@@ -28,6 +28,7 @@ h3 {font-size: 30px;}
 h2 {font-size: 21px;}
 
 .container {
+position: relative;
  width: 1200px;
  margin: auto;
  background-color: #ffffff;
@@ -86,17 +87,31 @@ position: relative;}
   margin-left: -45px;}
 
 .main-picture {
+	position: relative;
 	width: 1200px;
 	height: 564px;
 	margin: 0, auto;
 	background-color: #ddebf4;
   background: url("../img/filter-background.jpg") no-repeat;}
 
-.main-picture img	{
+.main-picture img {
+position: absolute;
 width: 458px;
 height: 352px;
-margin: 0, auto;
-transform: translate( 90%, 20%);}
+top: 106px;
+left: 50%;
+margin-left: -229px;
+}
+
+.main-picture img::after {
+	content:"";
+	position: absolute;
+	width: 1200px;
+	height: 57px;
+	bottom: 0;
+	margin: 0, auto;
+	background: url("../img/shape.png") no-repeat;
+}
 
 .main-quote {
   display: block;
@@ -315,8 +330,9 @@ input[type="checkbox"]:disabled:checked + label::after{
 }
 
 .price-controls label {
+	min-width: 300px;
 	display: inline-block;
-
+  text-align: center;
   font-size: 14px;
   line-height: 38px;
   vertical-align: top;
@@ -327,7 +343,7 @@ input[type="checkbox"]:disabled:checked + label::after{
 .price-controls .min-price,
 .price-controls .max-price {
   width: 90px;
-  padding-left: 65px;
+  /*padding-left: 65px;*/
 }
 
 .price-controls input {
@@ -482,7 +498,13 @@ input[type="checkbox"]:disabled:checked + label::after{
 .triangle-down:active::before{
  background-position: -110px -5px;}
 
-.triangle::before .active a:active{ /* не работает*/
+ .active .triangle::before{
+  background-position: -110px -5px;}
+
+ .active .triangle:hover::before{
+  background-position: -110px -5px;}
+
+.active .triangle:active::before{
  background-position: -110px -5px;}
 
 .responce {
@@ -578,11 +600,10 @@ input[type="checkbox"]:disabled:checked + label::after{
 	font-size: 14px;
   color: #666666;}
 
-.last-container {
-	width: 1200px;
-	position: relative;
+.map {
+	display: none;
 }
-footer {
+	footer {
  position: relative;
  width: 1200px;
  min-height: 120px;
@@ -590,14 +611,14 @@ footer {
  background-color: #f9fbf6;
  }
 
- /*.footer-map {*/
-	 /*position: absolute;
-	 z-index:3;
+ .footer-map {
+	 position: absolute;
+	 z-index:9999;
 	 bottom: 0;
 	 left: 0;
 	 right: 0;
-	 opacity: 0,9;
- }*/
+	 background: rgba(255, 255, 255, 0.8);
+ }
 
 .box {
 float: left;
@@ -670,9 +691,9 @@ opacity: 1;}
 
 .box:last-child {
   float: right;
-	min-height: 50px;
+	position: relative;
   margin-right: 0;
-  background: url("../img/logo-html.png") no-repeat 50% 50%;}
+}
 
 .box:last-child span {
   display: block;
@@ -681,15 +702,24 @@ opacity: 1;}
   margin-right: 10px;
 }
 
-.box:last-child:hover {
-background: url("../img/logo-html-blue.png") no-repeat 50% 50%;
-}
+.box:last-child::before{
+	content: "";
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 113px;
+	height: 39px;
+	transform: translate( -50%, -50%);
+	background: url("../img/sprite-logo.png") no-repeat;
+	background-position: -5px -5px;}
 
-.box:last-child:active {
-background: url("../img/logo-html-grey.png") no-repeat 50% 50%;
-}
+.box:last-child:hover::before {
+	  background-position: -128px -5px;
+background: url("../img/logo-html-blue.png") no-repeat 50% 50%;}
 
-
+.box:last-child:active::before {
+	background-position: -251px -5px;
+background: url("../img/logo-html-grey.png") no-repeat 50% 50%;}
 
 .sprite {
     background-image: url(spritesheet.png);
@@ -833,4 +863,27 @@ background: url("../img/logo-html-grey.png") no-repeat 50% 50%;
     width: 20px;
     height: 16px;
     background-position: -549px -5px;
+}
+.sprite {
+    background-image: url(spritesheet.png);
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.sprite-logo-html {
+    width: 113px;
+    height: 39px;
+    background-position: -5px -5px;
+}
+
+.sprite-logo-html-blue {
+    width: 113px;
+    height: 39px;
+    background-position: -128px -5px;
+}
+
+.sprite-logo-html-grey {
+    width: 113px;
+    height: 39px;
+    background-position: -251px -5px;
 }
