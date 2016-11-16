@@ -122,7 +122,8 @@ margin-left: -229px;
   width: 1200px;
   text-align: center;
   line-height: 26px;
-  padding: 15px 40px;}
+  padding-top: 15px;
+padding-bottom: 55px;}
 
 section .features{
   margin-left: auto;
