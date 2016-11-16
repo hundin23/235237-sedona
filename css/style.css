@@ -91,7 +91,7 @@ position: relative;}
 .main-picture {
 	position: relative;
 	width: 1200px;
-	height: 564px;
+	height: 508px;
 	margin: 0, auto;
 	background-color: #ddebf4;
   background: url("../img/filter-background.jpg") no-repeat;}
@@ -100,7 +100,7 @@ position: relative;}
 position: absolute;
 width: 458px;
 height: 352px;
-top: 76px;
+top: 28px;
 left: 50%;
 margin-left: -229px;
 }
@@ -252,7 +252,7 @@ float: right;}
   width: 460px;}
 
 .desk-choice {
-  min-width: 1200px;
+  width: 1200px;
   margin: 0;
   background: #4e7faa url(../img/filter-sepia.jpg) no-repeat;
   padding: 30px 72px;
