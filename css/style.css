@@ -124,7 +124,7 @@ margin-left: -229px;
   text-align: center;
   line-height: 26px;
   padding-top: 45px;
-  padding-bottom: 55px;}
+  padding-bottom: 45px;}
 
 section .features{
   margin-left: auto;
@@ -178,17 +178,17 @@ float: right;}
 	position: relative;
   width: 1200px;
   text-align: center;
-  padding-bottom: 55px;
-  padding-top: 55px;
+  padding-bottom: 45px;
+  padding-top: 45px;
   line-height: 24px;}
 
 	.recommended p {
-		padding-bottom: 50px;
+		padding-bottom: 30px;
 	}
 
 .recommended a {
   display: block;
-  width: 580px;
+  width: 570px;
   background-color: #766357;
 	font-size: 21px;
   text-align: center;
