@@ -584,13 +584,11 @@ input[type="checkbox"]:disabled:checked + label::after{
 
 .hotel-links a:last-child:hover {
 	background-color: #604e43;
-	color: #ffffff;
-}
+	color: #ffffff;}
+
 .hotel-links a:last-child:active {
 	background-color: #503e33;
-	color:#766860;
-}
-
+	color:#766860;}
 
 .result {
   width: 111px;
@@ -599,8 +597,7 @@ input[type="checkbox"]:disabled:checked + label::after{
  .star {
 		color: #89b8d5;
 		line-height: 21px;
-		font-size: 21px;
-	}
+		font-size: 21px;}
 
 .rate {
   display: block;
@@ -613,15 +610,13 @@ input[type="checkbox"]:disabled:checked + label::after{
   color: #666666;}
 
 .map {
-	display: none;
-}
-	footer {
+	display: none;}
+
+ footer {
  position: relative;
  width: 1200px;
  min-height: 120px;
- padding: 35px 72px;
- background-color: #f9fbf6;
- }
+ background-color: #f9fbf6;}
 
  .footer-map {
 	 position: absolute;
@@ -629,12 +624,13 @@ input[type="checkbox"]:disabled:checked + label::after{
 	 bottom: 0;
 	 left: 0;
 	 right: 0;
-	 background: rgba(255, 255, 255, 0.8);
- }
+	 background: rgba(255, 255, 255, 0.8);}
 
 .box {
 float: left;
-width: 352px;}
+width: 400px;
+padding-top: 30px;
+padding-left: 60px;}
 
 .box:first-child a {
 font: inherit;
@@ -653,8 +649,7 @@ color: #000000;}
 	margin-left: 5px;
 	background-color: #81b3d2;
 	position: relative;
-	transform: translate( 50% 50%);
-}
+	transform: translate( 50% 50%);}
 
 .social-btn::before {
 	content: "";
@@ -711,7 +706,7 @@ opacity: 1;}
   display: block;
   float: left;
 	padding: 18px 10px;
-  margin-right: 10px;
+
 }
 
 .box:last-child::before{
