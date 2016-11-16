@@ -30,7 +30,7 @@ h2 {font-size: 21px;}
 .container {
 position: relative;
  width: 1200px;
- margin: auto;
+ margin: 0 auto;
  background-color: #ffffff;
  box-shadow:  0 0 10px #e4e3e1;}
 
@@ -44,8 +44,11 @@ position: relative;}
 
 .main-nav a {
 	font: inherit;
-	font-weight: bold;
   color: #000000;}
+
+.main-nav-link {
+	font-weight: bold;
+}
 
 .main-nav a:hover {
 	color: #81b3d2;}
@@ -56,20 +59,20 @@ position: relative;}
 .main-nav a:active {
 	color: #cccccc;}
 
-.main-nav .active a {
+.main-nav-link .active a {
 	color: #766357;}
 
-.main-nav .active a:hover {
+.main-nav-link .active a:hover {
 	color: #604e43;}
 
-.main-nav .active a:active {
+.main-nav-link .active a:active {
 	color: #d6d0cc;}
 
 .main-nav li {
   display: block;
   float:left;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 15px;
+	padding-left: 5px;
   text-align: center;
   width: 240px;}
 
@@ -84,7 +87,7 @@ position: relative;}
   position: absolute;
   top:0;
   left:50%;
-  margin-left: -45px;}
+  margin-left: -60px;}
 
 .main-picture {
 	position: relative;
@@ -98,18 +101,19 @@ position: relative;}
 position: absolute;
 width: 458px;
 height: 352px;
-top: 106px;
+top: 76px;
 left: 50%;
 margin-left: -229px;
 }
 
-.main-picture img::after {
+.main-picture::after {
 	content:"";
 	position: absolute;
 	width: 1200px;
 	height: 57px;
+	left: 0;
 	bottom: 0;
-	margin: 0, auto;
+	margin: 0 auto;
 	background: url("../img/shape.png") no-repeat;
 }
 
@@ -118,7 +122,7 @@ margin-left: -229px;
   width: 1200px;
   text-align: center;
   line-height: 26px;
-  padding: 55px 40px;}
+  padding: 15px 40px;}
 
 section .features{
   margin-left: auto;
@@ -301,7 +305,7 @@ input[type="checkbox"]:disabled:checked + label::after{
   float: left;}
 
 .desk-choice-box:last-child {
-  width: 50%;
+  width: 300px;
   float: right;}
 
 	.price-controls {
@@ -330,7 +334,7 @@ input[type="checkbox"]:disabled:checked + label::after{
 }
 
 .price-controls label {
-	min-width: 300px;
+	min-width: 148px;
 	display: inline-block;
   text-align: center;
   font-size: 14px;
