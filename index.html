@@ -24,7 +24,6 @@
     </header>
     <section class="main-picture">
       <img src="img/group-welcome.png" width="458" height="352" alt="sedona-welcome">
-      <!-- <img src="img/shape.png" width="1200" height="57" alt="white-shape"> -->
     </section>
     <section class="main-quote">
       <h2>Седона - небольшой городок в Аризоне,<br>
@@ -43,19 +42,19 @@
     </section>
     <section class="advantages clearfix">
       <div class="advantages-item clearfix">
-        <img src="img/item-house.png" width="72" height="75" alt="appartments">
+        <img src="img/item-house.png" width="73" height="72" alt="appartments">
         <h2>Жилье</h2>
         <p>Рекомендуем пожить в настоящем мотеле,<br> все как в кино!</p>
       </div>
       <div class="advantages-item clearfix">
-        <img src="img/item-burger.png" width="70" height="74" alt="food">
+        <img src="img/item-burger.png" width="73" height="72" alt="food">
         <h2>Еда</h2>
         <p>Всегда заказывайте фирменный бургер,<br> вы не разочаруетесь!</p>
       </div>
       <div class="advantages-item clearfix">
         <img src="img/item-present.png" width="64" height="76" alt="suvenires">
         <h2>Сувениры</h2>
-        <p>Не только китайского, <br> но и местного производства!</p>
+        <p>Не только китайского, но и местного<br> производства!</p>
       </div>
       </section>
       <section class="features clearfix">
@@ -63,7 +62,7 @@
           <img src="img/canyon.jpg" height="256" width="800" alt="sedona-canyon">
         </div>
         <div class="features-item clearfix">
-             <h2>Там есть мост дьявола</h2>
+             <h2>Там есть<br> мост дьявола</h2>
              <span>-№2-</span>
              <p>Да, по нему можной пройти! Если конечно <br> вы осмелитесь</p>
           </div>
@@ -94,21 +93,31 @@
         <section class="search-hotels">
           <div class="modal-content">
           <form action="#" method="post">
-          <div class="direction-search">
+          <div class="icon-calendar">
             <label for="data1">Дата заезда:</label>
-               <input type="date" name="data1" value="24 апреля 2016">
-            <label for="data2">Дата выезда:</label>
-               <input type="date" name="data2" value="4 июля 2016">
-               <div class="people">
+              <input  type="text" id="data1" name="data1" value="24 апреля 2016">
+                <a href="#"></a>
+            </div>
+          <div class="icon-calendar">
+             <label for="data2">Дата выезда:</label>
+               <input class="icon-calendar" type="text" id="data2" name="data2" value="4 июля 2016">
+                <a href="#"></a>
+              </div>
+           <div class="people">
+           <div class="icon-add">
             <label for="adults">Взрослые:</label>
-               <input type="number" min="1" max="10" step="1" value="2">
+            <button class="plus">Плюс</button>
+              <input  type="text" id="adults" value="2">
+              <button class="minus">Минус</button>
                </div>
-               <div class="people">
+              <div class="icon-add">
             <label for="kids">Дети:</label>
-               <input type="number" min="0" max="10" step="1" value="0">
+            <button class="plus">Плюс</button>
+               <input type="text" id="kids" value="0">
+              <button class="minus">Минус</button>
                </div>
+             </div>
              <button class="btn">Найти</button>
-          </div>
           </form>
         </div>
               <div class="map">
@@ -118,7 +127,7 @@
           </iframe>
         </section>
     <footer class="main-footer footer-map">
-      <div class="box">
+      <div class="box first-page">
         <a href="#">#VISITSEDONA</a>
       </div>
       <div class="box">
