@@ -26,6 +26,7 @@ body  {
 a {text-decoration: none;}
 ul { list-style-type: none;}
 h3 {font-size: 30px;
+	font-weight: normal;
 }
 h2 {font-size: 21px;
 font-weight: normal;}
@@ -178,7 +179,7 @@ width: 1200px;}
 float: left;
 width: 400px;
 text-align: center;
-padding-bottom: 55px;
+padding-bottom: 65px;
 padding-top: 65px;}
 
 .advantages-item h2 {
@@ -195,9 +196,9 @@ float: right;}
   padding-top: 45px;
   line-height: 24px;}
 
-	.recommended p {
+	/*.recommended p {
 		padding-bottom: 15px;
-	}
+	}*/
 
 .recommended a {
   display: block;
@@ -659,7 +660,7 @@ input[type="checkbox"]:disabled:checked + label::after{
 .box {
 float: left;
 width: 400px;
-padding-top: 30px;
+padding-top: 60px;
 padding-left: 60px;}
 
 .box:first-child a {
