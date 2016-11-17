@@ -128,6 +128,10 @@ margin-left: -229px;
   padding-top: 40px;
   padding-bottom: 45px;}
 
+.main-quote p {
+	display: block;
+	padding-top: 5px;
+}
 section .features{
   margin-left: auto;
   margin-right: auto;
@@ -136,6 +140,7 @@ section .features{
 .features {
   background-color: #81b3d2;
   color: #ffffff;}
+
 
 .features-image {
   background: #e09e85 url("img/open-range.jpg") no-repeat;
@@ -153,8 +158,14 @@ section .features{
   width: 400px;
   float: left;
   text-align: center;
-  padding-bottom: 44px;
-  padding-top: 44px; }
+  padding-bottom: 39px;
+  padding-top: 39px; }
+
+.features-item span {
+	display: block;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
 
 .features-grey {
 background-color: #eeeeee;
