@@ -10,9 +10,10 @@ body {
 
 body  {
   background-color: #f2f2f2;
+
   font-size:14px;
-  font-weight: normal;;
-  font-family: "PTSans Regular", sans-serif;
+  font-weight: normal;
+  font-family: "PTSans Regular",Arial, sans-serif;
   line-height: 21px;
   color: #000000;
   text-transform: uppercase;}
@@ -25,7 +26,7 @@ body  {
 a {text-decoration: none;}
 ul { list-style-type: none;}
 h3 {font-size: 30px;
-font-weight: normal;}
+}
 h2 {font-size: 21px;
 font-weight: normal;}
 
@@ -88,7 +89,8 @@ position: relative;}
   position: absolute;
   top:0;
   left:50%;
-  margin-left: -65px;}
+  margin-left: -65px;
+z-index: 9999;}
 
 .main-picture {
 	position: relative;
@@ -392,11 +394,12 @@ input[type="checkbox"]:disabled:checked + label::after{
   position: absolute;
   top: -9px;
 
-  width: 4px;
-  height: 4px;
+  width: 16px;
+  height: 16px;
+	display: block;
 
   background: #ababab;
-  border: 8px solid #ffffff;
+  border: 6px solid #ffffff;
   border-radius: 50%;
   box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
   cursor: pointer;}
@@ -544,11 +547,12 @@ input[type="checkbox"]:disabled:checked + label::after{
 .substance  a {
   color: #000000;
   font-size: 21px;
-  font-weight: bold;}
+  font-weight: bold;
+  margin: 0 auto;}
 
 .substance h1	{
  margin: 0 auto;}
- /*padding-top: }*/
+
 
 	.substance  a:hover {
 		color: #81b3d2;
@@ -558,9 +562,12 @@ input[type="checkbox"]:disabled:checked + label::after{
 }
 
 .information span {
-	margin-bottom: 15px;
-	margin-top: 15px;
+
+	display: inline-block;
+	vertical-align: middle;
 	margin-right: 30px;
+	padding-bottom: 5px;
+	padding-top: 5px;
 }
 
 .hotel-links a {
@@ -569,7 +576,7 @@ input[type="checkbox"]:disabled:checked + label::after{
   text-align: center;
   cursor: pointer;
   padding: 5px 10px;
-  margin: 0 auto;
+
 
   color: #ffffff;
   font-size: 14px;
@@ -615,8 +622,8 @@ input[type="checkbox"]:disabled:checked + label::after{
   display: block;
   background-color: #f2f2f2;
   width: 111px;
-  padding: 10px 5px;
-	margin-top: 15px;
+  padding: 5px;
+	margin-top: 20px;
 
 	font-size: 14px;
   color: #666666;}
