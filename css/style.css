@@ -27,17 +27,17 @@ body  {
 a {text-decoration: none;}
 ul { list-style-type: none;}
 h3 {font-size: 30px;
-	font-weight: normal;
+
 }
-h2 {font-size: 21px;
-font-weight: normal;}
+h2 {font-size: 21px;}
+
 
 .container {
  position: relative;
  width: 1200px;
  margin: 0 auto;
  background-color: #ffffff;
- box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);}
+ box-shadow: 0 15px 30px rgba(0, 0, 0, 0.7);}
 
 header {
  position: relative;}
@@ -144,13 +144,13 @@ section .features{
 
 
 .features-image {
-  background: #e09e85 url("img/open-range.jpg") no-repeat;
+  background: #ffffff url("../img/open-range.jpg") no-repeat;
   float: right;
   line-height: 0;
   width: 800px;}
 
 .features-picture {
-  background: #e09e85 url("img/canyon.jpg") no-repeat;
+  background: #ffffff url("../img/canyon.jpg") no-repeat;
   line-height: 0;
   float: left;
   width: 800px;}
@@ -222,7 +222,9 @@ float: right;}
    margin-left: -290px;
    width: 570px;
    min-height: 400px;
-	 background: #ffffff ;
+	 background: #ffffff;
+
+	 font-size: 0;
 	 color: #000000;
 	 box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
 	 padding: 55px;}
@@ -231,14 +233,16 @@ float: right;}
 	position: relative;
 	display: block;
 	width: 460px;
-	margin-bottom: 30px;
-}
+	margin-bottom: 30px;}
+
  .icon-calendar label {
 	display: inline-block;
 	width: auto;
 	background-color: inherit;
 	width: 100px;
- }
+
+  font: inherit;
+  font-size: 14px;}
 
 .icon-calendar input {
 	display: inline-block;
@@ -247,6 +251,7 @@ float: right;}
   height: 40px;
 
 	font: inherit;
+  font-size: 14px;
   background-color: #f2f2f2;
   border: none;}
 
@@ -286,24 +291,32 @@ float: right;}
 	.icon-add label{
 	display: inline-block;
 	background-color: inherit;
-	width: 90px;
+	width: 100px;
+	font: inherit;
+  font-size: 14px;;
 	}
 
 .icon-add input {
 	display: inline-block;
+	vertical-align: top;
 	width: 38px;
 	height: 40px;
 	border: none;
 	margin: 0;
+
+	font: inherit;
+  font-size: 14px;
+	text-align: center;
 	background-color: #f2f2f2;
 }
 
 .icon-add button {
 	display: inline-block;
+	vertical-align: top;
 	max-width: 38px;
 	height: 40px;
-	font-size: 0;
 	margin: 0;
+	font-size: 0;
 	border: none;
 	background-color: #f2f2f2;
 }
@@ -639,10 +652,12 @@ input[type="checkbox"]:disabled:checked + label::after{
 .responce {
   width: 1200px;
   padding: 30px 72px;
-  border-bottom: 2px solid #e5e5e5;}
+  border-bottom: 1px solid #e5e5e5;}
 
 .hotel-picture {
   width: 165px;
+	max-width:100%;
+	height:auto;
   float: left;
   padding-right: 30px;}
 
@@ -689,7 +704,7 @@ input[type="checkbox"]:disabled:checked + label::after{
   border: none;}
 
 .hotel-links a:first-child {
-  background-color: #a3c7de;}
+  background-color: #81b3d2;}
 
 .hotel-links a:first-child:hover {
 	background-color: #669ec0;
@@ -731,6 +746,7 @@ input[type="checkbox"]:disabled:checked + label::after{
 	margin-top: 20px;
 
 	font-size: 14px;
+	text-align: center;
   color: #666666;}
 
 .map {
