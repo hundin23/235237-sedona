@@ -262,9 +262,9 @@ section .features{
 	right: 10px;
 	width: 21px;
 	height: 21px;
-	background-position: -277px -5px;
 	background:  url("../img/sprite.png") no-repeat;
-  outline: 1px solid red; }
+  background-position: -277px -5px;
+/*outline: 1px solid red; }*/}
 
 .data-choose a:hover {
 	background-position: -5px -5px;}
@@ -293,7 +293,8 @@ section .features{
   font-size: 14px;}
 
 .people-choose:last-child label {
-  padding-left: 50px;}
+  padding-left: 50px;
+  margin-left: 2px;}
 
 .people-choose input {
 	display: inline-block;
@@ -311,10 +312,11 @@ section .features{
 .people-choose button {
 	display: inline-block;
 	vertical-align: top;
-	max-width: 36px;
+	width: 36px;
 	height: 38px;
 	margin: 0;
 	font-size: 0;
+  background-color: #f2f2f2;
 	border: none;}
 
 .people-choose .plus::before {
@@ -324,7 +326,7 @@ section .features{
 	height: 11px;
   transform: translate(50% 50%);
   background: #f2f2f2 url("../img/sprite.png") no-repeat;
-	background-position: -330px -5px;}
+	background-position: -308px -5px;}
 
 .people-choose .minus::before {
   content: "";
@@ -333,7 +335,7 @@ section .features{
 	height: 3px;
   transform: translate(50% 50%);
   background: #f2f2f2 url("../img/sprite.png") no-repeat;
-	background-position: -308px -5px;}
+	background-position: -330px -5px;}
 
 .modal-content .btn {
   display: block;
