@@ -96,8 +96,7 @@ header {
 	width: 1200px;
 	height: 508px;
 	margin: 0, auto;
-	background-color: #ddebf4;
-  background: url("../img/filter-background.jpg") no-repeat;}
+  background: #ddebf4 url("../img/filter-background.jpg") no-repeat;}
 
 .main-picture img {
   position: absolute;
@@ -138,15 +137,14 @@ section .features{
   background-color: #81b3d2;
   color: #ffffff;}
 
-
 .features-image {
-  background: #ffffff url("../img/open-range.jpg") no-repeat;
+  background: #81b3d2 url("../img/open-range.jpg") no-repeat;
   float: right;
   line-height: 0;
   width: 800px;}
 
 .features-picture {
-  background: #ffffff url("../img/canyon.jpg") no-repeat;
+  background: #81b3d2 url("../img/canyon.jpg") no-repeat;
   line-height: 0;
   float: left;
   width: 800px;}
@@ -264,7 +262,7 @@ section .features{
 	right: 10px;
 	width: 21px;
 	height: 21px;
-	background:  url("../img/sprite.png") no-repeat;
+	background: url("../img/sprite.png") no-repeat;
   background-position: -277px -5px;}
 
 .data-choose a:hover {
@@ -274,14 +272,12 @@ section .features{
 	background-position: -36px -5px;}
 
 .data-choose 	input:focus {
-  outline: none;}
+  outline: none;
+  border: 1px solid #e5e5e5;
+  background: #ffffff;}
 
 .data-choose 	input:hover{
 	background: #ebebeb;}
-
-.data-choose	input:active {
-  border: 1px solid #e5e5e5;
-	background: #ffffff;}
 
 .people-choose {
 	display: inline-block;
@@ -321,50 +317,46 @@ section .features{
 	margin: 0;
 	font-size: 0;
   background-color: #f2f2f2;
-	border: none;}
+	border: none;
+  outline:none; }
 
 .people-choose .minus::before {
   content: "";
   display: block;
-  width: 11px;
-  height: 11px;
+  width: 12px;
+  height: 3px;
   transform: translate(50% 50%);
   background: #f2f2f2 url("../img/sprite.png") no-repeat;
-  background-position: -330px -5px;}
+  background-position: -308px -5px;}
 
 .people-choose .minus:hover::before{
-  width: 11px;
-	height: 11px;
-  transform: translate(50% 50%);
+  width: 12px;
+	height: 3px;
   background-position: -152px -5px;}
 
 .people-choose .minus:active::before{
-  width: 11px;
-	height: 11px;
-  transform: translate(50% 50%);
-  background-position: -89px -5px;}
+  width: 12px;
+	height: 3px;
+  background-position: -67px -5px;}
 
 .people-choose .plus::before {
   content: "";
   display: block;
-	width: 12px;
-	height: 3px;
+	width: 11px;
+	height: 11px;
   transform: translate(50% 50%);
   background: #f2f2f2 url("../img/sprite.png") no-repeat;
-	background-position: -308px -5px;}
+	background-position: -330px -5px;}
 
 .people-choose .plus:hover::before {
   width: 11px;
 	height: 11px;
-  transform: translate(50% 50%);
-  background-position: -152px -5px;}
+  background-position: -174px -5px;}
 
 .people-choose .plus:active::before{
   width: 11px;
 	height: 11px;
-  transform: translate(50% 50%);
-  background-position: -67px -5px;}
-
+  background-position: -89px -5px;}
 
 .modal-content .btn {
   display: block;
@@ -395,7 +387,7 @@ section .features{
 .desk-choice {
   width: 1200px;
   margin: 0;
-  background: #4e7faa url(../img/filter-sepia.jpg) no-repeat;
+  background: #4e7faa url("../img/filter-sepia.jpg") no-repeat;
   padding: 18px 72px;
   color: #ffffff;}
 
