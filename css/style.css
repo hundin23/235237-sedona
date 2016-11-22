@@ -33,7 +33,7 @@ h2 {font-size: 21px;}
  width: 1200px;
  margin: 0 auto;
  background-color: #ffffff;
- box-shadow: 0 10px 15px rgba(0, 0, 0, 0.7);
+ box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
  outline-style: none;}
 
 header {
@@ -128,12 +128,10 @@ header {
 	display: block;
 	padding-top: 10px;}
 
-section .features{
+.features {
   margin-left: auto;
   margin-right: auto;
-  width: 1200px;}
-
-.features {
+  width: 1200px;
   background-color: #81b3d2;
   color: #ffffff;}
 
@@ -156,10 +154,18 @@ section .features{
   padding-bottom: 37px;
   padding-top: 39px;}
 
+.features-item h2 {
+  display:block;
+  padding: 0 120px;}
+
+.features-item p {
+  display:block;
+  padding: 0 65px;}
+
 .features-item span {
 	display: block;
 	padding-top: 5px;
-	padding-bottom: 7px;}
+  padding-bottom: 7px;}
 
 .features-grey {
   background-color: #eeeeee;
@@ -185,6 +191,10 @@ section .features{
   padding-top: 5px;
   padding-bottom: 6px;
   font-size: 21px;}
+
+.advantages-item p {
+  display: block;
+  padding: 0 65px;}
 
 .advantages-item:nth-last-child {
   float: right;}
@@ -212,7 +222,40 @@ section .features{
   width: 1200px;
 	position: relative;}
 
+
+  -webkit-transform: @keyframes bounce,
+  -moz-transform: @keyframes bounce,
+  @keyframes bounce {
+  0%   {
+    transform: translateY(-1200px);
+  }
+  70%  {
+    transform: translateY(30px);
+  }
+  90%  {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+-webkit-transform: @keyframes shake,
+-moz-transform: @keyframes shake,
+@keyframes shake {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  10%, 30%, 50%, 70%, 90% {
+    transform: translateX(-10px);
+  }
+  20%, 40%, 60%, 80% {
+    transform: translateX(10px);
+  }
+}
+
 .modal-content {
+  display: none;
   position: absolute;
   top:0;
   left:50%;
@@ -227,6 +270,14 @@ section .features{
 	box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
 	padding: 55px;}
 
+.modal-content-show {
+  display: block;
+  animation: bounce 0.6s;
+}
+
+.modal-error {
+  animation: shake 0.8s;
+}
 .data-choose {
 	position: relative;
 	display: block;
@@ -325,7 +376,9 @@ section .features{
   display: block;
   width: 12px;
   height: 3px;
-  transform: translate(50% 50%);
+   -webkit-transform: translate(50% 50%);
+   -moz-transform: translate(50% 50%);
+   transform: translate(50% 50%);
   background: #f2f2f2 url("../img/sprite.png") no-repeat;
   background-position: -308px -5px;}
 
@@ -344,6 +397,8 @@ section .features{
   display: block;
 	width: 11px;
 	height: 11px;
+  -webkit-transform: translate(50% 50%);
+  -moz-transform: translate(50% 50%);
   transform: translate(50% 50%);
   background: #f2f2f2 url("../img/sprite.png") no-repeat;
 	background-position: -330px -5px;}
@@ -367,6 +422,7 @@ section .features{
   margin-bottom: 10px;
 	font: inherit;
 	font-size: 21px;
+  font-weight: bold;
 	line-height: 26px;
 
   text-transform: uppercase;
@@ -794,28 +850,30 @@ input[type="checkbox"]:disabled:checked + label::after{
   padding-top: 10px;}
 
 .social-btn {
+  position: relative;
 	float: left;
-
 	width: 46px;
 	height: 48px;
 	font-size: 0;
 
 	margin-left: 6px;
 	background-color: #81b3d2;
-	position: relative;
-	transform: translate( 50% 50%);}
+  -webkit-transform: translate(50% 50%);
+  -moz-transform: translate(50% 50%);
+  transform: translate(50% 50%);}
 
   .social-btn:first-child {
-    margin-left: 18px;
-  }
+    margin-left: 18px;  }
 
 .social-btn::before {
 	content: "";
 	position: absolute;
 	top: 50%;
 	left: 50%;
-	transform: translate( -50%, -50%);
-	background: url("../img/sprite.png") no-repeat;}
+  background: url("../img/sprite.png") no-repeat;
+  -webkit-transform: translate(50% 50%);
+  -moz-transform: translate(50% 50%);
+  transform: translate(50% 50%);}
 
 .social-btn-tw::before {
 	width: 17px;
