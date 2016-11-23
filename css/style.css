@@ -59,10 +59,10 @@ header {
 .main-nav a:active {
 	color: #cccccc;}
 
-.main-nav .active a {
+.nav-active a {
 	color: #766357;}
 
-.main-nav .active a:hover {
+.nav-active a:hover {
 	color: #604e43;}
 
 .main-nav .active a:active {
@@ -76,11 +76,11 @@ header {
 	padding-top: 16px;
   width: 240px;}
 
-.main-nav li:nth-last-child {
-  margin-right: 0;}
-
 .main-nav li:nth-child(2) {
   margin-right:240px;}
+
+.main-nav li:last-child {
+    margin-right: 0;}
 
 .logo {
   display: block;
@@ -123,6 +123,10 @@ header {
   line-height: 26px;
   padding-top: 43px;
   padding-bottom: 35px;}
+
+.main-quote h2 {
+  display: block;
+  padding: 0 300px;}
 
 .main-quote p {
 	display: block;
@@ -196,7 +200,7 @@ header {
   display: block;
   padding: 0 65px;}
 
-.advantages-item:nth-last-child {
+.advantages-item:last-child {
   float: right;}
 
 .recommended {
@@ -222,36 +226,41 @@ header {
   width: 1200px;
 	position: relative;}
 
-
-  -webkit-transform: @keyframes bounce,
-  -moz-transform: @keyframes bounce,
   @keyframes bounce {
   0%   {
-    transform: translateY(-1200px);
+  -webkit-transform: translateY(-100px);
+  -moz-transform:translateY(-100px);
+  transform:translateY(-100px);
   }
-  70%  {
-    transform: translateY(30px);
-  }
-  90%  {
-    transform: translateY(-10px);
-  }
+  50%  {
+    -webkit-transform: translateY(300px);
+    -moz-transform:translateY(300px);
+    transform:translateY(300px);}
+  80%  {
+    -webkit-transform: translateY(-150px);
+    -moz-transform:translateY(-150px);
+    transform:translateY(-150px);}
   100% {
-    transform: translateY(0);
-  }
+    -webkit-transform: translateY(0);
+    -moz-transform:translateY(0);
+    transform:translateY(0);}
 }
 
--webkit-transform: @keyframes shake,
--moz-transform: @keyframes shake,
 @keyframes shake {
   0%, 100% {
-    transform: translateX(0);
-  }
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    transform:translateX(0);}
+
   10%, 30%, 50%, 70%, 90% {
-    transform: translateX(-10px);
-  }
+    -webkit-transform: translateX(-10px);
+    -moz-transform: translateX(-10px);
+    transform:translateX(-10px);}
+
   20%, 40%, 60%, 80% {
-    transform: translateX(10px);
-  }
+    -webkit-transform: translateX(10px);
+    -moz-transform: translateX(10px);
+    transform:translateX(10px);}
 }
 
 .modal-content {
@@ -272,7 +281,7 @@ header {
 
 .modal-content-show {
   display: block;
-  animation: bounce 0.6s;
+  animation: bounce 1s;
 }
 
 .modal-error {
@@ -532,6 +541,8 @@ input[type="checkbox"]:disabled:checked + label::after{
   width: 2px;
   height: 22px;
   background: #ffffff;
+  -webkit-transform:translate(-50%, -50%);
+  -moz-transform:translate(-50%, -50%);
   transform: translate(-50%, -50%);}
 
 .price-controls label {
@@ -654,7 +665,7 @@ input[type="checkbox"]:disabled:checked + label::after{
 	border: none;
 	color: #000000;}
 
-.sorting .active a {
+.sorting-active a {
 	border: none;
 	color: #81b3d2;}
 
@@ -836,9 +847,6 @@ input[type="checkbox"]:disabled:checked + label::after{
   padding-top: 40px;
   padding-left: 105px;}
 
-.box:first-child .first-page a {
-	font-weight: normal;}
-
 .box:first-child a {
   display: block;
   font: inherit;
@@ -857,23 +865,17 @@ input[type="checkbox"]:disabled:checked + label::after{
 	font-size: 0;
 
 	margin-left: 6px;
-	background-color: #81b3d2;
-  -webkit-transform: translate(50% 50%);
-  -moz-transform: translate(50% 50%);
-  transform: translate(50% 50%);}
+	background-color: #81b3d2;}
 
-  .social-btn:first-child {
-    margin-left: 18px;  }
+.social-btn:first-child {
+  margin-left: 18px;  }
 
 .social-btn::before {
 	content: "";
 	position: absolute;
-	top: 50%;
-	left: 50%;
-  background: url("../img/sprite.png") no-repeat;
-  -webkit-transform: translate(50% 50%);
-  -moz-transform: translate(50% 50%);
-  transform: translate(50% 50%);}
+	top: 35%;
+	left: 32%;
+  background: url("../img/sprite.png") no-repeat;}
 
 .social-btn-tw::before {
 	width: 17px;
@@ -892,7 +894,7 @@ input[type="checkbox"]:disabled:checked + label::after{
 .social-btn-fb::before  {
 	width: 10px;
 	height: 19px;
-	background-position: -237px -5px;}
+	background-position: -236px -5px;}
 
 .social-btn-fb:active::before {
   opacity: 1;
