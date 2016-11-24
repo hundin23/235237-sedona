@@ -1,7 +1,7 @@
-<script>
+
     var link = document.querySelector(".recommended a");
     var popup = document.querySelector(".modal-content");
-    //  var close=document.querySelector(".btn-close");
+    var close=document.querySelector(".btn-close");
 
     var form = popup.querySelector("form");
 
@@ -24,10 +24,10 @@
         }
     });
 
-    //   close.addEventListener("click", function(event) {
-    //   event.preventDefault();
-    //   popup.classList.remove("modal-content-show");
-    //  });
+    close.addEventListener("click", function(event) {
+      event.preventDefault();
+       popup.classList.remove("modal-content-show");
+      });
 
     window.addEventListener("keydown", function(event) {
         if (event.keyCode === 27) {
@@ -60,4 +60,3 @@
             localStorage.setItem("adults", adults.value);
         }
     });
-</script>
