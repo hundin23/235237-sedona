@@ -226,7 +226,7 @@ header {
   width: 1200px;
 	position: relative;}
 
-  @keyframes bounce {
+  @-webkit-keyframes bounce {
   0%   {
   -webkit-transform: translateY(-100px);
   -moz-transform:translateY(-100px);
@@ -244,6 +244,80 @@ header {
     -webkit-transform: translateY(0);
     -moz-transform:translateY(0);
     transform:translateY(0);}
+}
+
+@-moz-keyframes bounce {
+0%   {
+-webkit-transform: translateY(-100px);
+-moz-transform:translateY(-100px);
+transform:translateY(-100px);
+}
+50%  {
+  -webkit-transform: translateY(300px);
+  -moz-transform:translateY(300px);
+  transform:translateY(300px);}
+80%  {
+  -webkit-transform: translateY(-150px);
+  -moz-transform:translateY(-150px);
+  transform:translateY(-150px);}
+100% {
+  -webkit-transform: translateY(0);
+  -moz-transform:translateY(0);
+  transform:translateY(0);}
+}
+
+@keyframes bounce {
+0%   {
+-webkit-transform: translateY(-100px);
+-moz-transform:translateY(-100px);
+transform:translateY(-100px);
+}
+50%  {
+  -webkit-transform: translateY(300px);
+  -moz-transform:translateY(300px);
+  transform:translateY(300px);}
+80%  {
+  -webkit-transform: translateY(-150px);
+  -moz-transform:translateY(-150px);
+  transform:translateY(-150px);}
+100% {
+  -webkit-transform: translateY(0);
+  -moz-transform:translateY(0);
+  transform:translateY(0);}
+}
+
+@-webkit-keyframes shake {
+  0%, 100% {
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    transform:translateX(0);}
+
+  10%, 30%, 50%, 70%, 90% {
+    -webkit-transform: translateX(-10px);
+    -moz-transform: translateX(-10px);
+    transform:translateX(-10px);}
+
+  20%, 40%, 60%, 80% {
+    -webkit-transform: translateX(10px);
+    -moz-transform: translateX(10px);
+    transform:translateX(10px);}
+}
+
+@-moz-keyframes shake {
+  0%, 100% {
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    transform:translateX(0);}
+
+  10%, 30%, 50%, 70%, 90% {
+    -webkit-transform: translateX(-10px);
+    -moz-transform: translateX(-10px);
+    transform:translateX(-10px);}
+
+  20%, 40%, 60%, 80% {
+    -webkit-transform: translateX(10px);
+    -moz-transform: translateX(10px);
+    transform:translateX(10px);}
 }
 
 @keyframes shake {
