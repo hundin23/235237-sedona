@@ -273,6 +273,7 @@ header {
 
 .search-hotels {
   width: 1200px;
+  background: url("../img/map.png") no-repeat;
   position: relative;
 }
 
@@ -1004,9 +1005,6 @@ input[type="checkbox"]:disabled:checked+label::after {
   color: #666666;
 }
 
-.map {
-  display: none;
-}
 
 footer {
   position: relative;
